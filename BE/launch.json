@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid":"830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "nodemon",
+            "runtimeExecutable": "nodemon",
+            "program": "${workspaceFolder}/app.js",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {"USER_DB":"sa",
+                "PW_DB": "1",
+                "DATABASE":"ManageLicense",
+                "HOST_DB":"localhost",
+                "NODE_ENV":"dev",
+                "PRIVATE_KEY":"duythachson!@#",
+                "HOSTNAME":"localhost",
+                "PORT":"3000",
+                "TIMEZONEDB":"+00:00",
+                "CURRENT_TIMEZONE":"-7"},
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

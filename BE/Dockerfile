@@ -1,0 +1,24 @@
+FROM node:12.14.1
+
+ENV USER_DB=sa
+ENV PW_DB=Du0ng1357@
+ENV DATABASE=ManagerLicenseCTTV
+ENV HOST_DB=45.117.169.156
+ENV NODE_ENV=dev
+ENV PRIVATE_KEY=duongdeptrai12345!@#
+ENV HOSTNAME=45.117.169.156
+ENV PORT=3002
+ENV TIMEZONEDB=+00:00
+ENV CURRENT_TIMEZONE=-7
+
+WORKDIR /ManagerLicenseCTTV/BE
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3002
+
+CMD ["node", "server.js"]

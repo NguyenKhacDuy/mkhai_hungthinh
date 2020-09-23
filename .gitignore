@@ -1,0 +1,9 @@
+FE/node_modules
+FE/package-lock.json
+BE/node_modules
+BE/package-lock.json
+BE/.env
+BE/uploadResults
+.vscode
+node_modules
+package-lock.json
